@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap");
+
+:root {
+  --warna-1: #d8f9f9;
+  --warna-2: #66bfbf;
+  --warna-3: #11999e;
+  --warna-4: #40514e;
+  --warna-5: #fafefd;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes gerak {
+  0% {
+    transform: translateY(0px);
+  }
+
+  70% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.header {
+  background-color: var(--warna-1);
+  height: 100vh;
+}
+
+#header-1 {
+  position: absolute;
+  max-width: 450px;
+  top: 50%;
+  left: 33%;
+}
+
+#header-2 {
+  position: absolute;
+  max-width: 265px;
+  top: 65%;
+  left: 5%;
+}
+
+#header-3 {
+  position: absolute;
+  max-width: 265px;
+  top: 10%;
+  left: 75%;
+}
+
+.header-content {
+  position: absolute;
+  top: 10%;
+  left: 33%;
+  text-align: center;
+  animation: gerak 3s infinite;
+}
+
+.header h1 {
+  font-family: "Sacramento", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 7rem;
+}
+
+.header p {
+  font-size: 2.5rem;
+  color: var(--warna-2);
+}
+
+h1 {
+  color: var(--warna-2);
+}
+
+h2 {
+  color: var(--warna-2);
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+h3,
+a {
+  color: var(--warna-3);
+}
+
+p {
+  color: var(--warna-4);
+}
+
+.perkenalan img {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+.isi {
+  max-width: 800px;
+  background-color: var(--warna-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 15rem;
+}
+
+.pemisah {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 5%;
+  color: #bac3c1;
+}
+
+.skill-part1,
+.skill-part2 {
+  display: flex;
+}
+
+.skill-part2 {
+  flex-direction: row-reverse;
+}
+
+
+.skill div img {
+  border-radius: 50%;
+  max-width: 200px;
+  margin: 5%;
+}
+
+.skill-part1 h3,
+.skill-part2 h3 {
+  font-size: 1.7rem;
+}
+
+.skill div {
+  margin-top: 5%;
+}
+
+.skill div p {
+  margin-top: 4%;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.hubungi h3 {
+  margin: 3%;
+}
+
+button {
+  border: 0;
+  padding: 8px 18px;
+  color: var(--warna-5);
+  background-color: var(--warna-2);
+  border-radius: 15px;
+  font-size: 1.5rem;
+  margin: 5%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--warna-2);
+  padding-bottom: 3.5%;
+}
+
+.footer p {
+  color: var(--warna-5);
+}
+
+footer {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.link a {
+  padding: 1rem;
+  color: var(--warna-3);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link a:hover {
+  border-bottom: 2px solid transparent;
+  color: var(--warna-4);
+  border-color: var(--warna-4);
+}
